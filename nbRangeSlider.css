@@ -1,0 +1,82 @@
+.nbRangeSlider{
+	width: 90%;
+    margin: 10px 5% 20px;
+}
+
+.nb-range-background{
+	height: 2px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	position: absolute;
+	width: 100%;
+	top: 12px;
+}
+
+.nb-range-drag{
+	height: 30px;
+	position: relative;
+	cursor: pointer;
+}
+
+.nb-range-handle{
+	height: 2px;
+	background: #009587;
+	border-radius: 3px;
+	border: 1px solid #009587;
+	width: 100%;
+	position: absolute;
+	top: 12px;
+	z-index: 1;
+}
+
+.nb-left-handle, .nb-right-handle{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border:2px solid #009587;
+	border-radius: 24px;
+	position: absolute;
+	top: 2px;
+	z-index: 1;
+	background: #fff;
+}
+
+.nb-left-handle{
+	left: -12px;
+}
+
+.nb-right-handle{
+	left: calc(100% - 12px);
+}
+
+.nb-range-input-min, .nb-range-input-max{
+	display: inline-block;
+	width: 70px;
+	position: relative;
+}
+
+.nb-range-input-min input, .nb-range-input-max input{
+	width: 60px;
+	outline: none;
+	display: inline-block;
+}
+
+.nb-range-input-max{
+	float: right; 
+}
+
+.nb-range-input p{
+	display: inline-block;
+	margin: 0;
+}
+
+.nb-range-input span{
+	position: absolute;
+    left: 10px;
+    line-height: 24px;
+    width: 60px;
+    padding: 0 5px;
+    z-index: 1;
+    background: #fff;
+    border: 1px solid #e1e1e1;
+}
